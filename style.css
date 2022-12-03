@@ -1,0 +1,298 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #191816;
+    font-family: 'Poppins', sans-serif;
+}
+
+.div-principal {
+    display: flex;
+}
+.logo {
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 60px;
+}
+.form {
+    background: #24221f;
+    width: 660px;
+    height: 572px;
+    margin-left: 480px;
+    margin-top: 190px;
+}
+
+.form-flex {
+    display: flex;
+    margin-top: 28px;
+}
+.form-flex svg {
+    margin-top: 40px;
+    margin-left: 122px;
+}
+
+.form-flex h1 {
+    color: #d4ccb6;
+    font-size: 30px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.form p {
+    color: #afb6c2;
+    margin-left: 126px;
+    margin-top: 10px;
+}
+
+.inputs-email p {
+    margin-top: 35px;
+}
+
+.inputs-email svg {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 26px;
+}
+.input {
+    width: 420px;
+    height: 50px;
+    margin-left: 123px;
+    margin-top: 10px;
+    background-color:#24221f;
+    border: 2px solid #afb6c2;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 40px;
+    color: #afb6c2;
+    font-size: 15px;
+}
+.input::placeholder {
+    color: #afb6c2; 
+}
+.inputs-senha {
+    margin-top: 25px;
+}
+.inputs-senha svg {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 26px;
+}
+
+.inputs-senha .svg2 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 545px;
+    margin-top: 26px;
+}
+
+.input-snh{
+    width: 420px;
+    height: 50px;
+    margin-left: 123px;
+    margin-top: 10px;
+    background-color:#24221f;
+    border: 2px solid #afb6c2;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 40px;
+    color: #afb6c2;
+    font-size: 15px;
+}
+
+.input-snh::placeholder {
+    color: #afb6c2; 
+}
+.image  img {
+    width: 47vw;
+    height: 100vh;
+    object-fit: cover;
+    margin-left: 200px;
+}
+.chekinho {
+    margin-top: 46px;
+}
+
+.chekinho p{
+    font-size: 17px;
+    margin-left: 31px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    margin-left: 123px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}    
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check {
+    top: 0;
+    width: 17px;
+    height: 17px;
+    background: #24221f;
+    border: 1px solid #afb6c2;
+    position: absolute;
+    border-radius: 4px ;
+} 
+
+.container input:checked ~ .check {
+    background: #ffc632;
+    border: #24221f;
+}
+.container .check::after {
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid  #24221f;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.check::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .check::after {
+    display: block;
+}
+
+.pê-solo {
+    display: block;
+    margin-left: 230px;
+    margin-top: -30px;
+}
+
+.pê-solo p {
+    font-family: 'Roboto', sans-serif;
+    color: #ffc632;
+    font-weight: 500;
+    margin-left: 186px;
+    margin-top: -2px;
+}
+
+.button-ultimo{
+    width: 464px;
+    height: 50px;
+    margin-left: 123px;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    background: #ffc632;
+    color: #24221f;
+    border-radius: 5px;
+}
+
+.ultima-parte p {
+    margin-top: 20px;
+    margin-left: 205px;
+    color: #ffc632;
+    font-weight: normal;
+}
+
+.ultima-parte a {
+    text-decoration: none;
+    color: #ffc632;
+}
+
+input[type="email"]:focus{
+    border-color: #FFC632;
+}
+input[type="password"]:focus{
+    border-color: #FFC632;
+}
+@media (max-width: 500px){
+    .logo {
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 68px;
+    }
+    .form {
+        background: #191816;
+        width: 424px;
+        height: 760px;
+        margin-left: 15px;
+        margin-top: 100px;
+    }
+    .form-flex svg {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .form p {
+        color: #afb6c2;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    .input {
+        width: 390px;
+        height: 50px;
+        margin-left: 19px;
+        margin-top: 10px;
+        background-color: #24221f;
+        border: 1px solid #afb6c2;
+        border-radius: 5px;
+    }
+    .inputs-email svg {
+        position: absolute;
+        margin-left: 26px;
+        margin-top: 26px;
+    }
+    .input-snh {
+        width: 390px;
+        height: 50px;
+        margin-left: 19px;
+        margin-top: 10px;
+        background-color: #24221f;
+        border: 1px solid #afb6c2;
+        border-radius: 5px;
+    }
+    .inputs-senha svg {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        margin-left: 26px;
+        margin-top: 26px;
+    }
+    .check {
+        margin-left: -102px;
+        margin-top: -8px;
+    }
+    .chekinho p{
+        position: absolute;
+        margin-left: -72px;
+        margin-top: -8px;
+    }
+    .pê-solo p {
+        margin-left: 20px;
+        margin-top: 69px;
+    }
+    .button-ultimo{
+        width: 390px;
+        margin-left: 19px;
+        margin-top: 70px;
+    }
+    img {
+        display:none;
+    }
+    .ultima-parte p {
+        margin-top: 30px;
+        margin-left: 100px;
+        color: #ffc632;
+        font-weight: normal;
+    }
+}
